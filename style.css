@@ -1,0 +1,190 @@
+* {
+    --dark-background: #1F2937;
+    --light-font: #E5E7EB;
+    --bright-blue: #3882F6;
+    --header-color: #F9FAF8;
+    --quote-background: #E5E7EB;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Roboto;
+}
+
+.header, .header-body, .boxes, .call, .header ul, .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-body p, .header a {
+    font-size: 18px;
+    color: var(--light-font);
+}
+
+
+
+/* .header Stuff */
+.header {
+    flex: 0 0 40px;
+    padding: 10px;
+    background: var(--dark-background);
+    justify-content: space-around;
+}
+
+.header h1{
+    margin: 0;
+    font-size: 24px;
+    color: var(--header-color);
+    font-weight: 900;
+}
+
+.header ul {
+    margin: 0;
+    list-style: none;
+    gap: 15px;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+/* .header-body stuff */
+.header-body div {
+    flex: 0 1 500px;
+    min-width: 300px;
+}
+
+.header-body {
+    background: var(--dark-background);
+    padding: 60px 100px 100px;
+    gap: 30px;
+}
+
+.header-body h1 {
+    font-size: 48px;
+    color: var(--header-color);
+}
+
+.header-body button {
+    background-color: var(--bright-blue);
+    color: white;
+    padding: 7px 25px;
+    border-radius: 5px;
+    border-style: none;
+    font-weight: 600;
+}
+
+.header-body h1, .header-body p, .header-body button {
+    margin: 5px;
+}
+
+.header-body img {
+    height: 180px;
+    object-fit: cover;
+    object-position: 0 80%;
+    flex: 0 0 400px;
+}
+
+
+/* .info stuff */
+.info {
+    text-align: center;
+    margin: 20px 0 60px;
+}
+
+.info h1 {
+    color: var(--dark-background);
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.boxes {
+    gap: 50px;
+}
+
+.info-box {
+    flex: 0 0 130px;
+}
+
+.info-box p {
+    font-size: 13px;
+    color: var(--dark-background);
+    margin: 5px;
+}
+
+.info img {
+    width: 130px;
+    border: var(--bright-blue) solid 3px;
+    border-radius: 10px;
+}
+
+
+/* quote stuff */
+.quote {
+    background-color: var(--quote-background);
+    padding: 80px 0;
+}
+
+.quote p {
+    max-width: 750px;
+    width: 80%;
+    min-width: 300px;
+    margin: auto;
+    font-size: 36px;
+    font-weight: 200;
+    color: var(--dark-background);
+}
+
+.quote .credit {
+    font-size: 18px;
+    text-align: right;
+}
+
+
+/*call stuff */
+.call {
+    margin: 50px auto;
+    padding: 30px;
+    background-color: var(--bright-blue);
+    max-width: 700px;
+    min-width: 375px;
+    width: 50%;
+    border-radius: 10px;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.call h2 {
+    font-size: 16px;
+    color: white;
+    margin: 0;
+}
+
+.call p {
+    font-size: 13px;
+    color: var(--light-font);
+    margin: 0;
+}
+
+.call button {
+    border: white solid 2px;
+    background-color: var(--bright-blue);
+    color: white;
+    padding: 4px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    flex: 0 0 100px;
+}
+
+
+/* footer stuff */
+.footer {
+    background: var(--dark-background);
+    color: var(--light-font);
+    font-size: 18px;
+    padding: 20px 0;
+    text-align: center;
+}
